@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from localizacoes.models import *
-from localizacoes.serializers import *
+from locations.models import *
+from locations.serializers import *
 # Create your views here.
 
 class PaisList(generics.ListAPIView):

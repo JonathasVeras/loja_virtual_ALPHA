@@ -1,5 +1,5 @@
 from django.contrib import admin
-from localizacoes.models import *
+from locations.models import *
 # Register your models here.
 admin.site.register(Pais)
 admin.site.register(Estado)

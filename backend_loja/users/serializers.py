@@ -1,4 +1,4 @@
-from usuarios.models import *
+from users.models import *
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -7,14 +7,14 @@ class usuarioCompradorSerializer(serializers.ModelSerializer):
         model = UsuarioComprador
         fields = [
             'id',
-            'nome',
+            'name',
             'user',
             'isAtivo',
             'cpf',
-            'celular',
+            'phone',
             'email',
-            'endereco',
-            'cidade',
-            'estado'
+            'adress',
+            'city',
+            'state'
             ]
         depth = 1
